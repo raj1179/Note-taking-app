@@ -1,0 +1,352 @@
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 90px auto 10px;
+    grid-row-gap: 20px;
+}
+
+.top {
+    font-size: 35pt;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    padding: 10px;
+    padding-left: 20px;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    margin-left: -10px;
+    position: fixed;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 10;
+}
+
+.navigation {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.main {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    z-index: 8;
+}
+
+.right {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.Form {
+    padding: 20px;
+    background: #fff;
+    width: auto;
+    margin: 65px auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.formHead {
+    color: white;
+    background-color: orange;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.instruction {
+    font-size: 10pt;
+    color: black;
+    margin-left: 5px;
+}
+
+.signup {
+    margin-left: 30px;
+}
+
+.Button {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    background-color: orange;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.inputField {
+    margin: 4px 0px 0px 0px;
+    padding: 5px;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 100%;
+}
+
+.list {
+    min-height: 6em;
+    max-height: 10em;
+    overflow-y: scroll;
+    list-style: none;
+    text-indent: 0;
+}
+
+.listItem {
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.floatRight {
+    float: right;
+}
+
+.rightText {
+    font-size: 15pt;
+    padding-right: 20px;
+}
+
+.logoutButton {
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.navMenu {
+    /* position: fixed; */
+    margin-top: 0;
+    margin-left: 15%;
+    padding: 0;
+    width: 100%;
+}
+
+.viewShareButtn {
+    background-color: orange;
+    font-size: 15pt;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.navli {
+    display: block;
+    background-color: orange;
+    width: auto;
+    margin-right: 0px 20px 0px 20px;
+    padding: 20px;
+    font-size: 15pt;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.aNav {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.pageTitle {
+    font-size: 18pt;
+    font-weight: bold;
+    border-bottom: 4px solid orange;
+    color: orange;
+    margin-top: -30px;
+    padding: 10px;
+}
+
+.newNote {
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.noteList {
+    margin: 100px 50px 0px 50px;
+}
+
+.notebook {
+    border: 3px solid orange;
+    margin: 0px 350px 50px 350px;
+    padding: 10px;
+}
+
+.notebookTitle {
+    margin-top: -3px;
+    margin-left: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.sharedInfo {
+    position: relative;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+.info {
+    /* border-left: 1px solid silver;
+    padding-left: 20px; */
+    margin-top: -6px;
+    margin-right: 15px;
+}
+
+.noteViewBttn {
+    position: relative;
+    margin-right: 20px;
+}
+
+.noteContriBttn {
+    position: relative;
+    margin-top: -35px;
+    margin-right: 20px;
+}
+
+.backButton {
+    margin-top: 120px;
+    color: orange;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+}
+
+.sidebar {
+    width: auto;
+    margin: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    border: 3px solid orange;
+    color: orange;
+    margin-top: 150px;
+}
+
+.sidebarTitle {
+    padding: 10px;
+    margin: 10px;
+}
+
+.sidebarText {
+    color: black;
+    margin-left: 15px;
+}
+
+.sidebarButton {
+    text-align: center;
+}
+
+.makeContribution {
+    padding: 10px;
+
+    bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.userContribution {
+    border-top: 3px solid orange;
+    width: 100%;
+}
+
+.userContributionInputField {
+    height: 150px;
+    width: 85%;
+}
+
+.userContributionButton {
+    padding: 10px;
+    margin: 30px;
+}
+
+.view {
+    min-height: 6em;
+    max-height: 32em;
+    border: 1px solid grey;
+    overflow-y: scroll;
+    height: 100%;
+    margin-left: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.userContent {
+    border-bottom: 1px solid grey;
+}
+
+.contentPostInfo {
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.content {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.invalid {
+    font-size: 10pt;
+    color: red;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
